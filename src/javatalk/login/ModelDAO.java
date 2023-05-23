@@ -275,7 +275,7 @@ public class ModelDAO {
 	private Connection getConnection() {
 		try {
 			Class.forName("oracle.jdbc.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@14.42.124.87:1521:xe", "yourid", "yourpassword");	// 오라클 db 계정 정보 입력
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "yourid", "yourpassword");	// 오라클 db 계정 정보 입력
 			System.out.println("커넥션 OK..정보 --> " + conn);
 		} catch (Exception e) {
 			System.out.println("Connection 생성 시 예외 발생함.");
